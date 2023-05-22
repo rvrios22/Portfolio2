@@ -1,0 +1,46 @@
+.landing-container {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(215, 215, 215, 0.8) 0%, rgb(255, 255, 255) 100%);
+}
+
+.name-container {
+    position: relative;
+}
+
+.hello {
+    font-size: .85em;
+    margin-right: 5px;
+}
+
+.name {
+    display: inline;
+    font-size: 7em;
+    overflow: hidden;
+    perspective: 0;
+    padding: 0;
+    animation: 3s anim-flipX ease 1;
+}
+
+
+
+/* animations */
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}

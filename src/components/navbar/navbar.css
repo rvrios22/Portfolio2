@@ -1,0 +1,21 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10dvh;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    padding-left: 2em;
+}
+
+.link-item {
+    padding-right: 2em;
+    color: rgb(76, 76, 76);
+    font-weight: 600;
+}
