@@ -1,0 +1,8 @@
+.projects-container {
+    height: 100dvh;
+    border: 2px solid red;
+}
+
+.project-image {
+    width: 25%;
+}
