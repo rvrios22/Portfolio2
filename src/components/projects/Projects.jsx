@@ -6,24 +6,26 @@ import { projectMap } from "../../mappingData";
 function Projects() {
   return (
     <div className="projects-container">
-      <h2>Projects I've Worked On</h2>
-      {projectMap.map((project) => (
-        <div>
-          <div className="project-image-container">
+      <h2 className="project-title">Projects I've Worked On</h2>
+      <div className="project-grid-container">
+        {projectMap.map((project) => (
+          <div className="project-card">
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <img
-                className="project-image"
-                src={`./${project.image}.png`}
-                alt={`${project.name} Website`}
-              />
+              <div className="project-image-container">
+                <img
+                  src={`./${project.image}.png`}
+                  alt={`${project.name}'s Website`}
+                  className="project-image"
+                />
+              </div>
+              <div className="project-text">
+                <h4 className="project-name">{project.name}</h4>
+                <p className="short-link">{project.shortLink}</p>
+              </div>
             </a>
-            <h3>{project.name}</h3>
-            <div className="project-desc-container">
-              <p className="project-desc">{project.desc}</p>
-            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

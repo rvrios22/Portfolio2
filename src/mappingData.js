@@ -40,12 +40,14 @@ export const imageMap = [
 export const projectMap = [
     {
         link: "https://zerogravityaerialphotography.com/",
+        shortLink: "zerogravityaerialphotography.com",
         image: "zeroGravity",
         name: "Zero Gravity Aerial Photography",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate perspiciatis ipsum. Provident a ratione id asperiores expedita ad quidem placeat repudiandae veritatis, temporibus architecto, laudantium maiores. Harum, recusandae asperiores.f"
     },
     {
         link: "https://www.lqcfchurch.org/",
+        shortLink: "lqcfchurch.org",
         image: "lqcf",
         name: "La Quinta Christian Fellowship Church",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate perspiciatis ipsum. Provident a ratione id asperiores expedita ad quidem placeat repudiandae veritatis, temporibus architecto, laudantium maiores. Harum, recusandae asperiores."
