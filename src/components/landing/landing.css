@@ -1,29 +1,23 @@
 .landing-container {
   height: 100dvh;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(215, 215, 215, 0.8) 0%, rgb(255, 255, 255) 100%);
+  gap: 2em;
+  text-align: center;
 }
 
-.name-container {
-  position: relative;
-}
 
-.hello {
-  /* font-size: .85em; */
-  margin-right: 5px;
-}
 
 .name {
   display: inline-block;
-  font-size: 7em;
   overflow: hidden;
   position: relative;
+  margin-left: 6px;
   top: .433em;
-  padding: 0;
   animation: 2s anim-lineUp ease-out, color-change 2s ease-out infinite;
 }
 
@@ -40,9 +34,8 @@
   -webkit-text-fill-color: transparent;
 }
 
-.bio-text {
-  font-size: 1.25em;
-  margin: .5em;
+.bio-text:last-child {
+  margin-top: 1em;
 }
 
 

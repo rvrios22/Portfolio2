@@ -1,4 +1,11 @@
 import React from "react";
+import { useState, useRef } from "react";
+
+import Swal from "sweetalert2";
+
+import emailjs from "@emailjs/browser";
+
+import "./contact.css";
 
 function Contact() {
   const [username, setUsername] = useState("");
@@ -16,17 +23,16 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        import.meta.env.REACT_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        "service_z2pewcl",
+        "template_a32gtx8",
         form.current,
-        import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        "2mpq9oCQHTINZh17-"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        (res) => {
+          console.log(res.text);
         },
         (error) => {
           console.log(error.text);
@@ -44,12 +50,16 @@ function Contact() {
     setUserMessage("");
   };
   return (
-    <div>
+    <div className="contact-container">
+      <h2 className="contact-header">Let's Get In Touch</h2>
+      <p className="contact-text">
+        Want to talk about a project or job? Reach out and I'll get back to you.
+      </p>
       <form ref={form} onSubmit={sendEmail}>
         <label className="contact-labels">Name</label>
         <input
           className="contact-inputs"
-          placeholder="Type Your Name..."
+          placeholder="What's Your Name?"
           type="text"
           name="user_name"
           value={username}
@@ -59,7 +69,7 @@ function Contact() {
         <label className="contact-labels">Email</label>
         <input
           className="contact-inputs"
-          placeholder="Type Your Email..."
+          placeholder="What's Your Email?"
           type="email"
           name="user_email"
           value={userEmail}
@@ -69,7 +79,7 @@ function Contact() {
         <label className="contact-labels">Message</label>
         <textarea
           className="contact-inputs"
-          placeholder="How can I help you?"
+          placeholder="How Can I Help You?"
           name="message"
           value={userMessage}
           onChange={(e) => setUserMessage(e.target.value)}
@@ -81,6 +91,30 @@ function Contact() {
           Send
         </button>
       </form>
+      <div className="social-container">
+        <a
+          href="https://www.linkedin.com/in/rafael-v-rios/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./linkedin.png"
+            alt="A link to my Linkedin Profile"
+            className="social-icons"
+          />
+        </a>
+        <a
+          href="https://github.com/rvrios22?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./github.png"
+            alt="A link to my github repositories"
+            className="social-icons"
+          />
+        </a>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,35 @@
+.contact-container {
+    height: 100dvh;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-text {
+    margin: 0 auto 1em;
+}
+
+label, input, textarea, button {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 7px;
+    resize: none;
+}
+
+.contact-inputs {
+    margin-bottom: 2em;
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 1em auto;
+    gap: 1em;
+}
+
+.social-icons {
+}

@@ -1,17 +1,24 @@
+.projects-container {
+    height: 100dvh;
+    width: 90%;
+    margin: 1em auto;
+    text-align: center;
+}
+
 .project-title {
     text-align: center;
-    margin: 2em;
+    margin: .5em;
 }
 
 .project-grid-container {
-    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2em;
+    grid-template-columns: 1fr;
+    gap: 1em;
 }
 
+
 .project-card {
-    width: 66%;
+    width: 100%;
     margin: 0 auto;
     border: 1px solid rgb(212, 212, 212);
     border-radius: 7px;
@@ -27,14 +34,13 @@
     box-shadow: 0 -3px 9px 5px rgb(237, 237, 237);
 }
 
-.project-image {
-    width: 90%;
-    margin: 0 auto;
+.project-text {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(238, 238, 238, 0.8) 0%, rgba(255, 255, 255, 1) 23%);
+    padding-bottom: 2em;
 }
 
-
-.project-text {
-    background: whitesmoke;
-    padding-top: .5em;
-    padding-bottom: 2em;
+.github-link {
+    width: 25%;
+    margin: 0 auto;
 }
