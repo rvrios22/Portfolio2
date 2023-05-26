@@ -1,6 +1,7 @@
 .landing-container {
   height: 100dvh;
   width: 90%;
+  max-width: 1800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -9,8 +10,6 @@
   gap: 2em;
   text-align: center;
 }
-
-
 
 .name {
   display: inline-block;
@@ -34,11 +33,25 @@
   -webkit-text-fill-color: transparent;
 }
 
+.bio-text {
+  font-size: clamp(1rem, 1.75vw, 2rem);
+}
+
 .bio-text:last-child {
   margin-top: 1em;
 }
 
+@media (min-width: 500px) {
+  .name {
+    font-size: 7vw;
+  }
+}
 
+@media (min-width: 2000px) {
+  .name {
+    font-size: 7rem;
+  }
+}
 
 /* animations */
 

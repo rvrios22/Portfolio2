@@ -54,4 +54,12 @@ export const projectMap = [
         name: "La Quinta Christian Fellowship Church",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate perspiciatis ipsum. Provident a ratione id asperiores expedita ad quidem placeat repudiandae veritatis, temporibus architecto, laudantium maiores. Harum, recusandae asperiores."
     },
+    {
+        link: "https://riosdevelopment.tech/",
+        shortLink: "riosdevelopment.tech",
+        githubLink: "https://github.com/rvrios22/Portfolio2",
+        image: "riosDevelopment",
+        name: "Rios Development Portfolio",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate perspiciatis ipsum. Provident a ratione id asperiores expedita ad quidem placeat repudiandae veritatis, temporibus architecto, laudantium maiores. Harum, recusandae asperiores."
+    },
 ]
