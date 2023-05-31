@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./projects.css";
 import { projectMap } from "../../mappingData";
 
@@ -8,10 +10,10 @@ function Projects() {
     <div className="projects-container">
       <h2 className="project-title">Projects I've Worked On</h2>
       <div className="project-grid-container">
-        {projectMap.map((project) => (
+        {projectMap.map((project, idx) => (
           <div key={project.shortLink}>
-            <div className="project-card">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <Link to={`/project/${idx}`}>
+              <div className="project-card">
                 <div className="project-image-container">
                   <img
                     src={`./${project.image}.png`}
@@ -23,8 +25,8 @@ function Projects() {
                   <h4 className="project-name">{project.name}</h4>
                   <p className="short-link">{project.shortLink}</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </Link>
             <div className="github-link">
               <a
                 href={project.githubLink}
