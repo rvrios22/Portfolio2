@@ -10,13 +10,13 @@ import Project from "./routes/Project/Project.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="project/:id" element={<Project />} />
         <Route path="/weather-app" element={<WeatherApp />} />
         <Route path="/wordle" element={<Wordle />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );

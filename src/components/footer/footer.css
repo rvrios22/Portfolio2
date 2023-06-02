@@ -1,4 +1,6 @@
 .footer-text {
+    position: sticky;
     text-align: center;
     font-size: .75em;
+    bottom: 0;
 }
