@@ -1,0 +1,37 @@
+.project-container {
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    position: relative;
+}
+
+.back-arrow {
+    width: 10%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute;
+    left: -10px;
+    top: 10px;
+}
+
+.route-project-image {
+    border-radius: 7px;
+    border: 1px solid rgb(212, 212, 212);
+    box-shadow: 0 2px 5px 2px rgb(212, 212, 212);
+    margin-bottom: .66em;
+}
+
+.github-link,
+.active-link {
+    width: 25%;
+    margin: 1em auto;
+}
+
+.route-project-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}

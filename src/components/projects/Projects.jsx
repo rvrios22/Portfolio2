@@ -27,18 +27,6 @@ function Projects() {
                 </div>
               </div>
             </Link>
-            <div className="github-link">
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./github.png"
-                  alt={`A link to ${project.name}'s repository`}
-                />
-              </a>
-            </div>
           </div>
         ))}
       </div>

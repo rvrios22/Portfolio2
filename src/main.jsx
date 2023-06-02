@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-
+import WeatherApp from "./components/weather-app/WeatherApp.jsx";
+import Wordle from "./components/wordle/Wordle.jsx";
 import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
@@ -12,7 +13,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="project/:id" element={<Project />}/>
+        <Route path="project/:id" element={<Project />} />
+        <Route path="/weather-app" element={<WeatherApp />} />
+        <Route path="/wordle" element={<Wordle />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
